@@ -54,7 +54,7 @@ footer.ft{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: var(--lgreen);
+    background-color: var(--dgreen);
     padding: 10px;
     border-radius: 999px;
 }
@@ -79,8 +79,11 @@ section{
     min-height: 100vh;
     height: auto;
 }
-
+.title{
+    padding-top: 250px;
+}
 h1{
+
     font-family: "Oswald", sans-serif;
     font-size: 160px;
     word-break: break-word;
@@ -106,6 +109,7 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 @keyframes esquerda {
     0%{
@@ -120,18 +124,23 @@ h2{
     }
 }
 
-
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     height: 60px;
+    background-color: transparent;
+    position: fixed;
     bottom: 0;
     width: 100%;
     transition: all 1s ease-in-out;
-
 }
+
+footer.ft{
+    background-color: var(--dpurple);
+}
+
 footer a img{
     opacity: 0.7;
     transition: all 500ms linear;
@@ -139,7 +148,7 @@ footer a img{
 
 footer a img:hover{
     opacity: 1;
-    box-shadow: 0px 3px 10px #090909;
+    box-shadow: 0px 3px 10px #09090909;
     transform: translateY(-5px) scale(1.1) rotate(360deg);
 }
 
@@ -166,6 +175,8 @@ footer a img:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
 
 #s4{
@@ -174,4 +185,8 @@ footer a img:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.vid{
+    width: 300px;
+    height: 300px;
 }
