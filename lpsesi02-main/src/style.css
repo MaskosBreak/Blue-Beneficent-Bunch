@@ -7,7 +7,14 @@
     --dorange: #DAD7CD;
     --font: "Roboto", sans-serif;
 }
-
+@font-face {
+  font-family: 'ultrakill';
+  src: url('../assets/fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ultratitle';
+    src: url(../assets/fonts/BroshKill-Regular.otf) format('otf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -37,7 +44,7 @@ nav{
 }
 
 nav.sc{
-    background-color: var(--lgreen);
+    background-color: black;
 }
 footer.ft{
     background-color: var(--lorange);
@@ -48,13 +55,15 @@ footer.ft{
         transform: translateY(-100px);
     }
 }
-
+.navWords{
+    color:black;
+}
 .Navitens{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: var(--dgreen);
+    background-color: white;
     padding: 10px;
     border-radius: 999px;
 }
@@ -85,15 +94,17 @@ section{
 h1{
 
     font-family: "Oswald", sans-serif;
-    font-size: 160px;
+    font-size: 180px;
     word-break: break-word;
     overflow-wrap:break-word ;
     letter-spacing: 7px;
     width: 100%;
     text-align: center;
     animation: esquerda 2s ease-in-out;
+
 }
 h2{
+    font-family: "ultrakill";
     font-size: 3vw;
     letter-spacing: 2px;
     width: 100%;
@@ -104,13 +115,23 @@ h2{
 
 }
 #s1{
-    background-image: url(../assets/images/bgtufo.png) ;
+    background-image: url(../assets/images/hell.jpeg) ;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
+#s2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+
 @keyframes esquerda {
     0%{
         transform: translateX(-100px);
@@ -126,7 +147,7 @@ h2{
 
 footer{
     display: flex;
-    align-items: center;
+    align-items: center;   
     justify-content: center;
     gap: 20px;
     height: 60px;
@@ -153,14 +174,6 @@ footer a img:hover{
 }
 
 
-@media(width <= 800px){
-    .navWords{
-        display: none;
-    }
-    #s1{
-        background-image: url(../assets/images/tuff.jpg);
-    }
-}
 
 #s2{
     background-image: url(../assets/images/ultra.jpg) ;
@@ -175,8 +188,8 @@ footer a img:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
+    
+    
 }
 
 #s4{
@@ -187,6 +200,43 @@ footer a img:hover{
     background-size: cover;
 }
 .vid{
-    width: 300px;
+    width: 400px;
     height: 300px;
+}
+.card{
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.card.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media(width <= 800px){
+    .navWords{
+        display: none;
+    }
+    #s1{
+        background-image: url(../assets/images/cellphone.jpeg);
+    }
+    h1 {
+        line-height: 120px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+
+    .vid {
+        width: 400px ;
+        height: 300px;
+    }
+
 }
