@@ -143,8 +143,60 @@ h2{
     flex-wrap: wrap;
     gap: 50px;
 }
+#s4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.formul{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px black;
+    color: black;
+    background-color: white;
+    margin-bottom: 8vh;
+}
+.formul input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0px 3px 10px black;
+
+}
+.formul label{
+    width: 100%;
 
 
+}
+.formul textarea{
+    max-width: 100%;
+    width: 255px;
+    min-width: 255px;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 16px;
+    box-shadow: 0px 3px 10px black;
+
+}
+.formul button{
+    width: 100%;
+    padding: 10px;
+    background-color: #d4d4d4;
+}
 
 @keyframes esquerda {
     0%{
